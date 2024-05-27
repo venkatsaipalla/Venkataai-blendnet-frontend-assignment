@@ -10,15 +10,8 @@ import {
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { useNavigate } from "react-router-dom";
-
-interface Question {
-  id: string;
-  text: string;
-  audioUrl?: string;
-  options: string[];
-  correctOption: string;
-}
-
+import { Question } from "../types/questions";
+  
 interface QuestionInterfaceProps {
   question: Question;
   questionNumber: number;
